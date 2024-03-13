@@ -1,5 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import "./App.css";
 import Navbar from "./components/navbar/navbar";
 import Home from "./components/home/home";
@@ -39,6 +41,8 @@ function App() {
           element={<About showMobileView={showMobileView} />}
         />
       </Routes>
+      <SpeedInsights />
+      <Analytics />
     </div>
   );
 }
