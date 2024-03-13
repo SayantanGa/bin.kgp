@@ -34,7 +34,10 @@ function App() {
           path="/simplifier"
           element={<Simplifier showMobileView={showMobileView} />}
         />
-        <Route element={<About showMobileView={showMobileView} />} />
+        <Route
+          path="/about"
+          element={<About showMobileView={showMobileView} />}
+        />
       </Routes>
     </div>
   );
