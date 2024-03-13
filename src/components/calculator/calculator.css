@@ -1,0 +1,88 @@
+.Calculator {
+  font-family: anta, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.Calculator-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.Calculator-header h1 {
+  font-size: 2.6rem;
+}
+
+.Calculator-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.Calculator-button {
+  font-size: 2rem;
+  color: coral;
+  cursor: pointer;
+}
+.Calculator-button:hover {
+  font-variation-settings: "FILL" 100;
+}
+.Calculator-output p {
+  padding: 0 6rem;
+}
+.Calculator-result {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 3rem;
+  width: 10vw;
+}
+.expression-input {
+  font-family: anta, sans-serif;
+  font-size: 2rem;
+  width: 40vw;
+  text-align: center;
+  border: none;
+  outline: none;
+  background-color: rgba(173, 104, 8, 0.04);
+  font-family: "Dancing Script", cursive;
+  caret-color: transparent;
+}
+
+.Variables-table {
+  background-color: rgba(173, 104, 8, 0.04);
+  text-align: center;
+}
+
+.Variables-values {
+  cursor: pointer;
+}
+
+.Info-button {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 1rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: rgba(173, 104, 8, 0.04);
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 49.5em) {
+  .Calculator {
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  .Variables-table {
+    font-size: 1.2rem;
+  }
+}

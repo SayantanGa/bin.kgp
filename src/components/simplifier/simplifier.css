@@ -1,0 +1,79 @@
+.simplifier {
+  font-family: anta, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.simplifier-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.simplifier-header h1 {
+  font-size: 2.6rem;
+}
+
+.simplifier-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.simplifier-button {
+  font-size: 2rem;
+  color: coral;
+  cursor: pointer;
+  margin: 2rem;
+}
+.simplifier-button:hover {
+  font-variation-settings: "FILL" 100;
+}
+.simplifier-input {
+  width: 45vw;
+  text-align: center;
+}
+.simplifier-output p {
+  padding: 0 6rem;
+}
+.simplifier-result {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2rem;
+  width: 80%;
+  border: rgba(173, 104, 8, 0.04);
+  background-color: rgba(173, 104, 8, 0.04);
+  border-radius: 3rem;
+  max-height: 60vh;
+  overflow: scroll;
+  scrollbar-color: transparent transparent;
+}
+.simplifier-expression-input {
+  font-family: anta, sans-serif;
+  font-size: 2rem;
+  width: 70%;
+  text-align: center;
+  border: none;
+  margin-top: 1rem;
+  outline: none;
+  background-color: rgba(173, 104, 8, 0.04);
+  font-family: "Dancing Script", cursive;
+  caret-color: transparent;
+}
+
+@media screen and (max-width: 49.5em) {
+  .simplifier {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .simplifier-input {
+    width: 100%;
+  }
+}
